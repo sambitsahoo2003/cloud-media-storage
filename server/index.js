@@ -189,7 +189,6 @@ app.post('/handlesignin' , async (req,res) => {
 
 app.post('/handleregister' , async (req,res) => {
   currEmail = req.body.email;
-  currFolder = currEmail+"/";
   const password = req.body.password;
 
   const params = {
